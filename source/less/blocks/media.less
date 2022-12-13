@@ -35,3 +35,28 @@
   align-items: center;
   color: #333333;
 }
+
+@media (min-width: @tablet-width) {
+  .media__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .media__description-container {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .media__description-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: -83px;
+  }
+
+  .media__description,
+  .media__author {
+    color: #ffffff;
+  }
+}

@@ -9,8 +9,12 @@
   background-color: #ffffff;
 }
 
+.page__container {
+  background-color: #ffffff;
+}
+
 .page__slogan {
-  width: 284px;
+  min-width: 284px;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -55,4 +59,39 @@
 
 .page__slogan--catalog {
   margin-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .page {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .page__container {
+    width: 768px;
+  }
+
+  .page__slogan {
+    font-size: 21px;
+  }
+
+  .page__intro {
+    width: auto;
+  }
+
+  .page__intro--catalog {
+    width: 430px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .page__container {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
