@@ -37,10 +37,6 @@
   min-height: 56px;
   background-color: #ffffff;
 }
-.html {
-  display: flex;
-  justify-content: center;
-}
 .header__logo {
   position: absolute;
 }
@@ -242,7 +238,10 @@
   background-color: #ffffff;
 }
 .page {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   height: 100%;
   width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -299,10 +298,11 @@
 @media (min-width: 768px) {
   .page {
     width: 100%;
-    background-color: #f2f2f2;
   }
   .page__container {
-    width: 768px;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 100%;
   }
   .page__slogan {
     font-size: 21px;
@@ -321,7 +321,8 @@
   }
   .page__container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
   }
 }
 .feedback__container {
