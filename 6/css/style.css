@@ -164,19 +164,19 @@
   padding: 16px 18px;
   box-sizing: border-box;
 }
-.house-icon::before {
+.advantages__icon--house::before {
   content: url("../img/vector/house.svg");
   width: 75px;
   height: 72px;
   margin: auto;
 }
-.food-icon::before {
+.advantages__icon--food::before {
   content: url("../img/vector/food.svg");
   width: 73px;
   height: 70px;
   margin: auto;
 }
-.present-icon::before {
+.advantages__icon--present::before {
   content: url("../img/vector/present.svg");
   width: 64px;
   height: 76px;
@@ -616,7 +616,7 @@
 .media__item {
   min-height: 424px;
 }
-.media_counter-wrapper {
+.media__counter-wrapper {
   display: flex;
   flex-direction: row;
   column-gap: 14px;
@@ -805,6 +805,9 @@
   width: 100%;
   display: none;
 }
+.header-nav--vissible {
+  display: block;
+}
 .header-nav__list {
   margin: 0;
   padding: 0;
@@ -814,7 +817,7 @@
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  .header-nav--vissible {
+  .header-nav {
     position: absolute;
     top: 0;
     z-index: 2;
