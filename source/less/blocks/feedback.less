@@ -8,6 +8,30 @@
   padding: 24px 20px 39px;
 }
 
+.feedback__form-wrapper {
+  position: relative;
+}
+
+.feedback__form-wrapper--phone::before {
+  position: absolute;
+  content: url("/source/img/vector/phone.svg");
+  width: 58px;
+  height: 58px;
+  top: 21px;
+  z-index: 1;
+  right: 4px;
+}
+
+.feedback__form-wrapper--mail::before {
+  position: absolute;
+  content: url("/source/img/vector/mail.svg");
+  width: 58px;
+  height: 58px;
+  top: 21px;
+  z-index: 1;
+  right: 4px;
+}
+
 .feedback__form-radio-input--text {
   width: 279px;
   min-height: 150px;
@@ -31,6 +55,7 @@
 
 .feedback__form-radio-input {
   padding-left: 16px;
+  padding-right: 65px;
   width: 280px;
   min-height: 58px;
   background-color: #f2f2f2;

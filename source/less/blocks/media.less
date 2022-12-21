@@ -11,6 +11,20 @@
   min-height: 424px;
 }
 
+.media_counter-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 14px;
+}
+
+.media__like-button {
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .media__description {
   margin: 0 0 5px;
@@ -22,6 +36,10 @@
   display: flex;
   text-transform: uppercase;
   color: #000000;
+}
+
+.media__like-counter {
+  margin-top: 7px;
 }
 
 .media__author {
@@ -52,11 +70,16 @@
   .media__description-container {
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
-    top: -83px;
+    top: -95px;
   }
 
   .media__description,
   .media__author {
     color: #ffffff;
+  }
+
+  .media__like-button {
+    color: #ffffff;
+    opacity: 1;
   }
 }

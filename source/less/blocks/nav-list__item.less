@@ -1,7 +1,9 @@
 .nav-list__item {
   height: 55px;
   display: flex;
-  flex-direction: column;
+  padding: 17px;
+  box-sizing: border-box;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -17,6 +19,19 @@
   color: #ffffff;
 }
 
+.nav-list__button {
+  position: relative;
+  right: -97px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/vector/mobile-close-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
 @media (min-width: @tablet-width) {
   .nav-list__item {
     box-shadow: none;
@@ -29,6 +44,10 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+  }
+
+  .nav-list__button {
+    display: none;
   }
 }
 
@@ -44,5 +63,9 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+  }
+
+  .nav-list__button {
+    display: none;
   }
 }
