@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="/source/img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/source/img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
@@ -142,15 +146,25 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--forward">
-            <div class="advantages__container advantages__size">
-              <h3 class="advantages__title advantages__title--main ">Настоящий городок</h3>
-              <span class="advantages__description advantages__description--main advantages__description--main-number">—
-                №1 —</span>
-              <p class="advantages__description advantages__description--main">Седона — не аттракцион для туристов, там
-                течёт своя жизнь</p>
+            <div class="advantages__wrapper">
+              <div class="advantages__container advantages__size">
+                <h3 class="advantages__title advantages__title--main ">Настоящий городок</h3>
+                <span
+                  class="advantages__description advantages__description--main advantages__description--main-number">—
+                  №1 —</span>
+                <p class="advantages__description advantages__description--main">Седона — не аттракцион для туристов,
+                  там
+                  течёт своя жизнь</p>
+              </div>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-city-desktop.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-city-tablet.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="./img/photo-city.jpg" width="320" height="260"
+                  srcset="./img/photo-city@2x.jpg 2x" alt="Фото домов в Седоне.">
+              </picture>
             </div>
-            <img class="advantages__image" src="./img/photo-city.jpg" width="320" height="260"
-              alt="Фото домов в Седоне.">
             <ul class="advantages__features-list">
               <li class="advantages__features-item advantages__icon--house">
                 <h4 class="page__slogan advantages__title">Жильё</h4>
@@ -180,8 +194,14 @@
               <p class="advantages__description advantages__description--main">Да, по нему можно пройти! Если вы
                 осмелитесь, разумеется</p>
             </div>
-            <img class="advantages__image" src="./img/photo-city.jpg" width="320" height="260"
-              alt="Фото каньона в Седоне.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/photo-canyon-desktop.jpg 1x, ./img/photo-canyon-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/photo-canyon-tablet.jpg 1x, ./img/photo-canyon-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="./img/photo-canyon.jpg" width="320" height="260"
+                srcset="./img/photo-canyon@2x.jpg 2x" alt="Фото каньона в Седоне.">
+            </picture>
           </li>
           <li class="advantages__item-more advantages__size">
             <h4 class="page__slogan advantages__title advantages__title--feature">Небольшая площадь</h4>

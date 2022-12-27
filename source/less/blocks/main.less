@@ -5,8 +5,14 @@
 
 .main__background {
   background-image: url("../img/back-mobile.jpg");
+  background-color: #81b3d2;
   width: 320px;
   min-height: 389px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .main__logo {
@@ -25,6 +31,18 @@
     width: 100%;
   }
 
+  .main__background {
+    width: 768px;
+    min-height: 518px;
+    background-image: url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
   .main__map iframe {
     width: 100%;
   }
@@ -33,6 +51,15 @@
 @media (min-width: @desktop-width) {
   .main {
     width: 100%;
+  }
+
+  .main__background {
+    width: 1200px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 
   .main__map iframe {
