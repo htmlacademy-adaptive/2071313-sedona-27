@@ -1,9 +1,44 @@
 .site-background {
   background-image: url("../img/form-background-mobile.jpg");
+  background-color: #81b3d3;
   width: 320px;
   min-height: 158px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-background-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-background {
+    width: 768px;
+    min-height: 518px;
+    background-image: url("../img/form-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-background-tablet@2x.jpg");
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .site-background {
+    width: 1200px;
+    min-height: 518px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/form-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-background-desktop@2x.jpg");
+    }
+  }
 }
