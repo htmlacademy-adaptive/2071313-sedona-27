@@ -32,6 +32,20 @@
   cursor: pointer;
 }
 
+.nav-list__button:hover {
+  opacity: 0.6;
+}
+
+.nav-list__button:focus {
+  outline: 2px solid #000000;
+  outline-offset: 14px;
+  border-radius: 30px;
+}
+
+.nav-list__button:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .nav-list__item {
     box-shadow: none;
@@ -44,6 +58,20 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+  }
+
+  .nav-list__link:hover {
+    color: #81b3d2;
+  }
+
+  .nav-list__link:focus-visible {
+    outline: none;
+    color: #766357;
+  }
+
+  .nav-list__link:active {
+    color: #000000;
+    opacity: 0.3;
   }
 
   .nav-list__button {

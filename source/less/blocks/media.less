@@ -27,6 +27,14 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
+.media__like-button:hover {
+  opacity: 0.6;
+}
+
+.media__like-button:active {
+  opacity: 0.3;
+}
+
 .media__description {
   margin: 0 0 5px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -71,7 +79,12 @@
   .media__description-container {
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
-    top: -95px;
+    padding: 0 27px 0 21px;
+    top: -61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .media__description,
