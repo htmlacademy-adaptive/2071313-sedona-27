@@ -5,9 +5,9 @@
 }
 
 .advantages__container {
-  padding: 54px 18px 40px;
+  position: relative;
+  padding: 54px 18px 38px;
   width: 100%;
-  min-height: 211px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,17 @@
   background-color: #81b3d2;
 }
 
+.advantages__container--pseudo::before {
+  content: url("../img/vector/divider-mobile-2.svg");
+  position: absolute;
+  height: 37px;
+  top: -18px;
+}
+
 .advantages__title {
-  margin: 0 0 16px;
+  margin: 10px 0 17px 47px;
   min-height: 26px;
+  text-align: left;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -34,6 +42,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-align: left;
+  width: 237px;
 }
 
 .advantages__title--main {
@@ -55,6 +65,10 @@
   color: #ffffff;
 }
 
+.advantages__description--feature {
+  margin: 0 0 0 47px;
+}
+
 .advantages__features-list {
   margin: 0;
   padding: 0;
@@ -62,28 +76,40 @@
 }
 
 .advantages__features-item {
-  padding: 16px 18px;
+  position: relative;
+  padding: 16px 18px 6px;
   box-sizing: border-box;
 }
 
+.advantages__icon--present {
+  padding: 16px 18px 43px;
+}
+
 .advantages__icon--house::before {
-  content: url("../img/vector/house.svg");
-  width: 75px;
-  height: 72px;
+  position: absolute;
+  top: 18px;
+  content: url("../img/vector/icon-house.svg");
+  width: 5px;
+  height: auto;
   margin: auto;
 }
 
 .advantages__icon--food::before {
-  content: url("../img/vector/food.svg");
-  width: 73px;
-  height: 70px;
+  position: absolute;
+  top: 19px;
+  content: url("../img/vector/icon-food.svg");
+  width: 3px;
+  height: auto;
   margin: auto;
 }
 
 .advantages__icon--present::before {
-  content: url("../img/vector/present.svg");
-  width: 64px;
-  height: 76px;
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  content: url("../img/vector/icon-present.svg");
+  width: 4px;
+  height: auto;
   margin: auto;
 }
 
@@ -130,6 +156,10 @@
     box-sizing: border-box;
     min-height: 256px;
     flex-wrap: initial;
+  }
+
+  .advantages__size--bridge {
+    padding: 39px 18px 35px;
   }
 
   .advantages__features-list {
