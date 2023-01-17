@@ -1,4 +1,5 @@
 .site-background {
+  position: relative;
   background-image: url("../img/form-background-mobile.jpg");
   background-color: #81b3d3;
   width: 320px;
@@ -7,16 +8,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-position-y: bottom;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/form-background-mobile@2x.jpg");
   }
 }
 
+.site-background__image {
+  position: relative;
+  bottom: 8px;
+}
+
+.site-background::before {
+  content: url("../img/vector/divider-mobile-1.svg");
+  position: absolute;
+  bottom: 0;
+  height: 57px;
+}
+
 @media (min-width: @tablet-width) {
+  .site-background__image {
+    width: 456px;
+    height: 77px;
+    bottom: 11px;
+  }
+
   .site-background {
     width: 768px;
-    min-height: 518px;
+    min-height: 290px;
     background-image: url("../img/form-background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,13 +46,25 @@
       background-image: url("../img/form-background-tablet@2x.jpg");
     }
   }
+
+  .site-background::before {
+    content: url("../img/vector/divider-tablet.svg");
+    position: absolute;
+    bottom: 0;
+    height: 57px;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
+  .site-background__image {
+    width: 459px;
+    height: 79px;
+  }
+
   .site-background {
     width: 1200px;
-    min-height: 518px;
+    min-height: 301px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../img/form-background-desktop.jpg");
@@ -40,5 +72,12 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/form-background-desktop@2x.jpg");
     }
+  }
+
+  .site-background::before {
+    content: url("../img/vector/divider-desktop.svg");
+    position: absolute;
+    bottom: 0;
+    height: 57px;
   }
 }

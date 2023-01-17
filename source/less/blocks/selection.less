@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 40px;
-  padding: 39px 18px 49px;
+  row-gap: 2px;
+  padding: 43px 18px 49px;
 }
 
 .selection__link {
@@ -14,7 +14,7 @@
 }
 
 .selection__title {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .selection__intro {
@@ -24,7 +24,16 @@
 @media (min-width: @tablet-width) {
   .selection {
     padding: 61px 155px 58px;
-    min-height: 318px;
+    justify-content: space-between;
+  }
+
+  .selection__title {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+
+  .selection__intro {
+    margin-bottom: 38px;
   }
 
   .selection__link {
@@ -35,5 +44,9 @@
 @media (min-width: @desktop-width) {
   .selection {
     padding: 61px 371px 66px;
+  }
+
+  .selection__intro {
+    margin-bottom: 44px;
   }
 }
