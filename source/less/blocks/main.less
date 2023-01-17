@@ -19,7 +19,7 @@
 .main__background::before {
   content: url("../img/vector/divider-mobile-1.svg");
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   height: 57px;
 }
 
@@ -40,8 +40,9 @@
   }
 
   .main__logo {
+    padding-top: 76px;
     width: 461px;
-    height: 293px;
+    height: auto;
   }
 
   .main__background {
@@ -54,6 +55,13 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
     }
+  }
+
+  .main__background::before {
+    content: url("../img/vector/divider-tablet.svg");
+    position: absolute;
+    bottom: 0;
+    height: 57px;
   }
 
   .main__map iframe {
@@ -78,6 +86,13 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
     }
+  }
+
+  .main__background::before {
+    content: url("../img/vector/divider-desktop.svg");
+    position: absolute;
+    bottom: 0;
+    height: 57px;
   }
 
   .main__map iframe {

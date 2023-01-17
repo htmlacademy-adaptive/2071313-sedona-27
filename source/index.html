@@ -148,7 +148,7 @@
       <nav class="header-nav">
         <ul class="header-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current">
-            <a class="nav-list__link" href="#">Главная</a>
+            <a class="nav-list__link nav-list__link--mobile" href="#">Главная</a>
             <button class="nav-list__button" type="button">
               <span class="visually-hidden">Закрыть</span>
             </button>
@@ -159,7 +159,7 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Форма отзыва</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--color">
             <a class="nav-list__link" href="#">Html academy</a>
           </li>
         </ul>
@@ -228,8 +228,8 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--reverse">
-            <div class="advantages__container advantages__size advantages__size--bridge">
-              <h3 class="advantages__title advantages__title--main">Там есть мост дьявола</h3>
+            <div class="advantages__container advantages__container--bridge advantages__size">
+              <h3 class="advantages__title advantages__title--main advantages__title--bridge">Там есть  мост дьявола</h3>
               <span class="advantages__description advantages__description--main advantages__description--main-number">—
                 №2 —</span>
               <p class="advantages__description advantages__description--main">Да, по нему можно пройти! Если вы
@@ -244,24 +244,22 @@
                 srcset="./img/photo-canyon@2x.jpg 2x" alt="Фото каньона в Седоне.">
             </picture>
           </li>
-          <li class="advantages__item-more advantages__size">
-            <h4 class="page__slogan advantages__title advantages__title--feature">Небольшая площадь</h4>
-            <span class="advantages__description advantages__description--feature">— №3 —</span>
-            <p class="page__intro advantages__description advantages__description--feature">Все
-              достопримечательности
-              находятся очень близко</p>
+          <li class="advantages__item-more advantages__size advantages__square">
+            <h4 class="page__slogan advantages__title advantages__title--feature advantages__title--description">Небольшая площадь</h4>
+            <span class="advantages__description advantages__description--feature advantages__description--number">— №3 —</span>
+            <p class="page__intro advantages__description advantages__description--feature advantages__description--text">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item-more advantages__size">
-            <h4 class="page__slogan advantages__title advantages__title--feature">Красивая дорога</h4>
-            <span class="advantages__description advantages__description--feature">— №4 —</span>
-            <p class="page__intro advantages__description advantages__description--feature">Ехать в Седону из
+            <h4 class="page__slogan advantages__title advantages__title--feature advantages__title--description">Красивая дорога</h4>
+            <span class="advantages__description advantages__description--feature advantages__description--number">— №4 —</span>
+            <p class="page__intro advantages__description advantages__description--feature advantages__description--text">Ехать в Седону из
               Лас-Вегаса
               совсем не скучно!</p>
           </li>
-          <li class="advantages__item-more advantages__size">
-            <h4 class="page__slogan advantages__title advantages__title--feature">Мало туристов</h4>
-            <span class="advantages__description advantages__description--feature">— №5 —</span>
-            <p class="page__intro advantages__description advantages__description--feature">Большинство едет в
+          <li class="advantages__item-more advantages__size advantages__size--tourists">
+            <h4 class="page__slogan advantages__title advantages__title--feature advantages__title--description advantages__title--tourists">Мало туристов</h4>
+            <span class="advantages__description advantages__description--feature advantages__description--number">— №5 —</span>
+            <p class="page__intro advantages__description advantages__description--feature advantages__description--text">Большинство едет в
               Гранд
               Каньон и толпится там</p>
           </li>
@@ -272,7 +270,7 @@
         <p class="page__intro selection__intro">Укажите предполагаемые даты поездки, и мы покажем вам
           лучшие предложения гостиниц в Седоне</p>
         <a class="site-button selection__link" href="catalog.html">
-          Найти гостинницу
+          Найти гостиницу
         </a>
       </section>
       <div class="main__map">

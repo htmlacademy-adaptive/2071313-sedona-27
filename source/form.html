@@ -184,8 +184,8 @@
       <section class="feedback">
         <h2 class="visually-hidden">Укажите контактную информацию </h2>
         <div class="feedback__container">
-          <div class="feedback__wrapper">
-            <h3 class="page__slogan feedback__title">Представьтесь:</h3>
+          <div class="feedback__wrapper feedback__wrapper--name">
+            <h3 class="page__slogan feedback__title feedback__title--name">Представьтесь:</h3>
             <form class="feedback__form" action="#" method="post">
               <div class="feedback__form-wrapper">
                 <label class="page__intro feedback__label" for="name">Имя*:</label>
@@ -204,9 +204,9 @@
               </div>
             </form>
           </div>
-          <div class="feedback__wrapper">
-            <h3 class="page__slogan feedback__title">Контактная информация:</h3>
-            <form class="feedback__form" action="#" method="post">
+          <div class="feedback__wrapper feedback__wrapper--contacts">
+            <h3 class="page__slogan feedback__title feedback__title--contacts">Контактная информация:</h3>
+            <form class="feedback__form feedback__form--contacts" action="#" method="post">
               <div class="feedback__form-wrapper feedback__form-wrapper--phone">
                 <label class="page__intro feedback__label" for="phone">Контактный телефон*:</label>
                 <input class="feedback__form-radio-input feedback__form-radio-input--phone" type="tel"
@@ -229,65 +229,69 @@
             <ul class="feedback-radio__list">
               <li class="feedback-radio__item">
                 <label class="page__slogan feedback-radio__label">
-                  <input class="feedback-radio__button" type="radio" name="impression" value="yes" tabindex="-1">
-                  <span class="feedback-radio__button-custom" tabindex="0"></span>
+                  <input class="feedback-radio__button" type="radio" name="impression" value="yes">
+                  <span class="feedback-radio__button-custom"></span>
                   Скорее положительное
                 </label>
               </li>
               <li class="feedback-radio__item">
                 <label class="page__slogan feedback-radio__label">
-                  <input class="feedback-radio__button" type="radio" name="impression" value="not" tabindex="-1">
-                  <span class="feedback-radio__button-custom" tabindex="0"></span>
+                  <input class="feedback-radio__button" type="radio" name="impression" value="not">
+                  <span class="feedback-radio__button-custom"></span>
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="catalog-radio-item">
+              <li class="feedback-radio__item">
                 <label class="page__slogan feedback-radio__label">
-                  <input class="feedback-radio__button" type="radio" name="impression" value="not" tabindex="-1">
-                  <span class="feedback-radio__button-custom" tabindex="0"></span>
+                  <input class="feedback-radio__button" type="radio" name="impression" value="not">
+                  <span class="feedback-radio__button-custom"></span>
                   Затрудняюсь ответить
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-radio__fieldset">
-            <legend class="page__slogan feedback-radio__legend">Посещенные достопримечательности:</legend>
+          <fieldset class="feedback-radio__fieldset feedback-radio__fieldset--checkbox">
+            <legend class="page__slogan feedback-radio__legend feedback-radio__legend--checkbox">Посещенные
+              достопримечательности:</legend>
             <ul class="feedback-radio__list feedback-radio__list-checkbox">
               <li class="feedback-radio__item">
-                <input type="checkbox" class="feedback-radio__custom-checkbox" id="bridge" name="bridge" value="yes"
-                  tabindex="-1">
-                <label class="page__slogan feedback-radio__label" for="bridge" tabindex="0">Мост Дьявола</label>
+                <input type="checkbox" class="feedback-radio__custom-checkbox" id="bridge" name="bridge" value="yes">
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="bridge">Мост
+                  Дьявола</label>
               </li>
               <li class="feedback-radio__item">
-                <input type="checkbox" class="feedback-radio__custom-checkbox" id="bell" name="bell" value="yes"
-                  tabindex="-1">
-                <label class="page__slogan feedback-radio__label" for="bell" tabindex="0">Гора-Колокол</label>
+                <input type="checkbox" class="feedback-radio__custom-checkbox" id="bell" name="bell" value="yes">
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox"
+                  for="bell">Гора-Колокол</label>
               </li>
               <li class="feedback-radio__item">
-                <input type="checkbox" class="feedback-radio__custom-checkbox" id="park" name="park" value="yes"
-                  tabindex="-1">
-                <label class="page__slogan feedback-radio__label" for="park" tabindex="0">Слайд-парк</label>
+                <input type="checkbox" class="feedback-radio__custom-checkbox" id="park" name="park" value="yes">
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox"
+                  for="park">Слайд-парк</label>
               </li>
               <li class="feedback-radio__item">
-                <input type="checkbox" class="feedback-radio__custom-checkbox" id="rocks" name="rocks" value="yes"
-                  tabindex="-1">
-                <label class="page__slogan feedback-radio__label" for="rocks" tabindex="0">Красные скалы</label>
+                <input type="checkbox" class="feedback-radio__custom-checkbox" id="rocks" name="rocks" value="yes">
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="rocks">Красные
+                  скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-radio__fieldset">
-            <legend class="page__slogan feedback-radio__legend">Опишите свои эмоции:</legend>
+          <fieldset class="feedback-radio__fieldset feedback-radio__fieldset--text">
+            <legend class="page__slogan feedback-radio__legend feedback-radio__legend--text">Опишите свои эмоции:
+            </legend>
             <input class="feedback__form-radio-input feedback__form-radio-input--text" type="text" name="text-field"
               id="text" placeholder="Опишите подробно все свои восторги">
           </fieldset>
-          <button class="site-button feedback-radio__button-send" type="submit">Отправить отзыв</button>
-          <span class="feedback-radio__footnote"></span>
+          <div class="feedback-radio__button-wrapper">
+            <button class="site-button feedback-radio__button-send" type="submit">Отправить отзыв</button>
+            <span class="feedback-radio__footnote">* — обязательные поля</span>
+          </div>
         </form>
       </div>
     </main>
 
     <footer class="footer">
-      <section class="footer-contacts">
+      <section class="footer-contacts footer-contacts--form">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="page__title footer-contacts__hashtag">#visitsedona</p>
         <ul class="footer-contacts__list">
