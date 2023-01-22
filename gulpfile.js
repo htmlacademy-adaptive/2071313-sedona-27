@@ -36,7 +36,7 @@ export const html = () => {
 }
 
 export const optimizeImages =() => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png,svg}', '!source/img/icons/*.svg'])
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
@@ -132,7 +132,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-  copyImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
