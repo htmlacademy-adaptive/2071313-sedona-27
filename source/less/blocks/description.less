@@ -15,8 +15,19 @@
 }
 
 .description--form {
+  position: relative;
   min-height: 198px;
   padding: 37px 30px 32px 26px;
+}
+
+.description--form::before {
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(214, 214, 214);
 }
 
 .description--catalog {
@@ -62,9 +73,13 @@
 
 @media (min-width: @tablet-width) {
   .description {
-    padding: 59px 60px 55px;
+    padding: 49px 115px 55px;
     width: 100%;
     min-height: 206px;
+  }
+
+  .description--main {
+    padding: 50px 139px 53px;
   }
 
   .description--media {
@@ -93,13 +108,29 @@
   .description--form {
     padding: 66px 164px 80px;
   }
+
+  .description--form::before {
+    top: 428px;
+    left: 215px;
+    width: 338px;
+    transform: rotate(90deg);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .description {
-    padding: 100px 358px 88px;
+    padding: 61px 358px 42px;
     width: 100%;
-    min-height: 287px;
+  }
+
+  .description--catalog {
+    padding: 101px 358px 89px;
+  }
+
+  .description--main {
+    padding: 60px 353px 43px 347px;
+    width: 100%;
+    min-height: 206px;
   }
 
   .description--media {
@@ -114,5 +145,10 @@
     justify-content: space-between;
     min-height: 280px;
     padding: 115px 380px 66px;
+  }
+
+  .description--form::before {
+    top: 450px;
+    left: 445px;
   }
 }

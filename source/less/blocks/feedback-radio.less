@@ -10,6 +10,7 @@
 }
 
 .feedback-radio__fieldset {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,22 @@
   padding: 5px 0 58px;
   border: none;
   box-sizing: border-box;
+}
+
+.feedback-radio__fieldset--button::before,
+.feedback-radio__fieldset--checkbox::before {
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: -41;
+  height: 1px;
+  width: 320px;
+  background-color: #d6d6d6;
+}
+
+.feedback-radio__fieldset--checkbox::before {
+  bottom: 24px;
+  left: -18px;
 }
 
 .feedback-radio__list {
@@ -219,6 +236,41 @@
     margin-bottom: 22px;
   }
 
+  .feedback-radio__legend--checkbox::before,
+  .feedback-radio__legend--text::before {
+    position: absolute;
+    top: 24px;
+    left: 359px;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 123px;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
+
+  .feedback-radio__legend--checkbox::after,
+  .feedback-radio__legend--text::after {
+    position: absolute;
+    right: 356px;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 123px;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
+
+  .feedback-radio__legend--text::after {
+    top: 10px;
+    left: 357px;
+  }
+
+  .feedback-radio__legend--text::before {
+    top: 10px;
+    left: -168px;
+  }
+
   .feedback-radio__legend--text {
     right: 0;
     margin-bottom: 21px;
@@ -231,6 +283,11 @@
   .feedback-radio__fieldset {
     min-height: 210px;
     padding: 5px 5px 5px 107px;
+  }
+
+  .feedback-radio__fieldset--button::before,
+  .feedback-radio__fieldset--checkbox::before {
+    display: none;
   }
 
   .feedback-radio__fieldset--checkbox {
@@ -310,6 +367,17 @@
 
   .feedback-radio__legend--checkbox {
     margin-bottom: 53px;
+  }
+
+  .feedback-radio__legend--checkbox::after,
+  .feedback-radio__legend--checkbox::before,
+  .feedback-radio__legend--text::after,
+  .feedback-radio__legend--text::before {
+    width: 277px;
+  }
+
+  .feedback-radio__legend--text::before {
+    left: -322px;
   }
 
   .feedback-radio__button-wrapper {

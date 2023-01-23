@@ -5,7 +5,18 @@
 }
 
 .feedback__wrapper {
+  position: relative;
   padding: 21px 20px 39px;
+}
+
+.feedback__wrapper::before {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(214, 214, 214);
 }
 
 .feedback__wrapper--contacts {
@@ -64,18 +75,39 @@
   padding-right: 65px;
   width: 280px;
   min-height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
 }
 
+.feedback__form-radio-input:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback__form-radio-input:focus-visible {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+.feedback__form-radio-input:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
 .feedback__form-radio-input--text {
   width: 280px;
   min-height: 149px;
+  resize: none;
 }
 
 .feedback__form-radio-input--text::placeholder {
-  transform: translateY(-40px);
+  transform: translateY(5px);
 }
 
 .feedback__form-radio-input::placeholder {
@@ -84,6 +116,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
@@ -98,6 +131,21 @@
     padding: 24px 23px 39px;
     width: 381px;
     box-sizing: border-box;
+  }
+
+  .feedback__wrapper--name::before,
+  .feedback__wrapper--contacts::before {
+    position: absolute;
+    content: "";
+    bottom: -36px;
+    left: 60px;
+    height: 1px;
+    width: 123px;
+    background-color: #d6d6d6;
+  }
+
+  .feedback__wrapper--contacts::before {
+    left: 200px;
   }
 
   .feedback__wrapper--contacts {
@@ -121,7 +169,7 @@
   }
 
   .feedback__form-radio-input--text::placeholder {
-    transform: translateY(-50px);
+    transform: translateY(5px);
   }
 
   .feedback__title--name {
@@ -157,6 +205,17 @@
   .feedback__wrapper--name {
     padding: 4px 20px 39px 57px;
     width: 511px;
+  }
+
+  .feedback__wrapper--name::before,
+  .feedback__wrapper--contacts::before {
+    bottom: -45px;
+    left: 57px;
+    width: 280px;
+  }
+
+  .feedback__wrapper--contacts::before {
+    left: 163px;
   }
 
   .feedback__wrapper--contacts {

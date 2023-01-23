@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -133,7 +133,7 @@
   </svg>
   <div class="page__container">
     <header class="header">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="index.html">
         <svg class="icon__sedona">
           <use xlink:href="#logo-sedona"></use>
         </svg>
@@ -154,13 +154,13 @@
             </button>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Фото и видео</a>
+            <a class="nav-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Форма отзыва</a>
+            <a class="nav-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Html academy</a>
+            <a class="nav-list__link" href="https://up.htmlacademy.ru">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -277,10 +277,10 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-radio__fieldset feedback-radio__fieldset--text">
-            <legend class="page__slogan feedback-radio__legend feedback-radio__legend--text">Опишите свои эмоции:
-            </legend>
-            <input class="feedback__form-radio-input feedback__form-radio-input--text" type="text" name="text-field"
-              id="text" placeholder="Опишите подробно все свои восторги">
+            <legend class="page__slogan feedback-radio__legend feedback-radio__legend--text">Опишите свои эмоции:</legend>
+            <textarea class="feedback__form-radio-input feedback__form-radio-input--text" name="text-field"
+              id="text" placeholder="Опишите подробно все свои восторги"></textarea>
+              <!-- <textarea class="feedback-radio__textarea" name="text-field" id="text" placeholder="Опишите подробно все свои восторги"></textarea> -->
           </fieldset>
           <div class="feedback-radio__button-wrapper">
             <button class="site-button feedback-radio__button-send" type="submit">Отправить отзыв</button>
@@ -320,7 +320,7 @@
             </a>
           </li>
         </ul>
-        <div class="footer-contacts__container">
+        <div class="footer-contacts__container footer-contacts__container--form">
           <a class="page__intro footer-contacts__container-link" href="https://up.htmlacademy.ru">
             <svg class="icon__academy">
               <use xlink:href="#htmlacademy"></use>
