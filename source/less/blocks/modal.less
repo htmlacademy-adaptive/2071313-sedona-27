@@ -1,4 +1,38 @@
-.modal {
+.modal__feedback-wrapper {
+  display: none;
+}
+
+.modal__feedback-wrapper--vissible {
+  display: block;
+}
+
+.modal__error-wrapper {
+  display: none;
+}
+
+.modal__error-wrapper--vissible {
+  display: block;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+.modal__container {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -9,18 +43,13 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.modal--feedback {
-  min-height: 280px;
-  padding-top: 44px;
-}
-
 .modal__button {
   border: none;
   width: 280px;
   min-height: 58px;
 }
 
-.modal--error {
+.modal__container--error {
   padding: 36px 39px 37px 27px;
   min-height: 280px;
 }
@@ -37,12 +66,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .modal--error {
+  .modal__container--error {
     width: 400px;
     min-height: 347px;
   }
 
-  .modal--feedback {
+  .modal__container--feedback {
     width: 640px;
     min-height: 347px;
     padding: 44px 27px 0;
@@ -63,12 +92,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .modal--error {
+  .modal__container--error {
     width: 400px;
     min-height: 347px;
   }
 
-  .modal--feedback {
+  .modal__container--feedback {
     width: 640px;
     min-height: 347px;
     padding: 44px 27px 0;
