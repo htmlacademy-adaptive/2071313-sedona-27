@@ -138,18 +138,18 @@
   <div class="page__container">
     <header class="header">
       <a class="header__logo" href="index.html">
-        <svg class="icon__sedona">
+        <svg class="header__sedona-icon">
           <use xlink:href="#logo-sedona"></use>
         </svg>
       </a>
       <button class="header__button" type="button">
-        <svg class="icon__burger">
+        <svg class="header__burger-icon">
           <use xlink:href="#burger-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <!-- Для отоборажения меню необходимо добавить класс header-nav--vissible -->
-      <nav class="header-nav">
+      <nav class="header-nav header-nav--vissible">
         <ul class="header-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current">
             <a class="nav-list__link" href="index.html">Главная</a>
@@ -282,7 +282,7 @@
           </fieldset>
           <fieldset class="feedback-radio__fieldset feedback-radio__fieldset--text">
             <legend class="page__slogan feedback-radio__legend feedback-radio__legend--text">Опишите свои эмоции:</legend>
-            <textarea class="feedback__form-radio-input feedback__form-radio-input--text" name="text-field" id="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback-radio__textarea" name="text-field" id="text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="feedback-radio__button-wrapper">
             <button class="site-button feedback-radio__button-send" type="submit">Отправить отзыв</button>
@@ -299,7 +299,7 @@
         <ul class="footer-contacts__list">
           <li class="footer-contacts__item">
             <a class="footer-contacts__link" href="https://vk.com/htmlacademy">
-              <svg class="icon__social-1">
+              <svg class="footer-contacts__icon-1">
                 <use xlink:href="#vkontakte"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
@@ -307,7 +307,7 @@
           </li>
           <li>
             <a class="footer-contacts__link" href="https://t.me/htmlacademy">
-              <svg class="icon__social-2">
+              <svg class="footer-contacts__icon-2">
                 <use xlink:href="#telegram"></use>
               </svg>
               <span class="visually-hidden">Телеграм</span>
@@ -315,7 +315,7 @@
           </li>
           <li>
             <a class="footer-contacts__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="icon__social-3">
+              <svg class="footer-contacts__icon-3">
                 <use xlink:href="#youtube"></use>
               </svg>
               <span class="visually-hidden">Ютуб</span>
@@ -324,7 +324,7 @@
         </ul>
         <div class="footer-contacts__container footer-contacts__container--form">
           <a class="page__intro footer-contacts__container-link" href="https://up.htmlacademy.ru">
-            <svg class="icon__academy">
+            <svg class="footer-contacts__icon-academy">
               <use xlink:href="#htmlacademy"></use>
             </svg>
             Разработано
@@ -334,25 +334,34 @@
     </footer>
   </div>
 
-  <div class="overlay"></div>
-  <div class="modal modal--feedback">
-    <h2 class="page__slogan modal__title">Ваш отзыв отправлен!</h2>
-    <p class="page__intro modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-      опубликуем его на
-      сайте.</p>
-    <form class="modal__button-form" method="post">
-      <button class="site-button modal__button" type="submit">Закрыть окно</button>
-    </form>
+  <div class="modal">
+    <!-- Для отоборажения задать modal__feedback-wrapper--vissible -->
+  <div class="modal__feedback-wrapper">
+    <div class="modal__overlay"></div>
+    <div class="modal__container modal__container--feedback">
+      <h2 class="page__slogan modal__title">Ваш отзыв отправлен!</h2>
+      <p class="page__intro modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        опубликуем его на
+        сайте.</p>
+      <form class="modal__button-form" method="post">
+        <button class="site-button modal__button" type="submit">Закрыть окно</button>
+      </form>
+    </div>
+  </div>
+  <!-- Для отоборажения задать modal__error-wrapper--vissible -->
+  <div class="modal__error-wrapper">
+  <div class="modal__overlay"></div>
+    <div class="modal__container modal__container--error">
+      <h2 class="page__slogan modal__title">Что-то пошло не так!</h2>
+      <p class="page__intro modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <form method="post" action="#">
+        <button class="site-button modal__button modal__button--error" type="button">Ok</button>
+      </form>
+    </div>
+  </div>
   </div>
 
-  <div class="modal modal--error">
-    <h2 class="page__slogan modal__title">Что-то пошло не так!</h2>
-    <p class="page__intro modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <form method="post" action="#">
-      <button class="site-button modal__button modal__button--error" type="button">Ok</button>
-    </form>
-  </div>
 
 </body>
 

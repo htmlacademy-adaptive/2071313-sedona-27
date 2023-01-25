@@ -144,18 +144,18 @@
   <div class="page__container">
     <header class="header">
       <a class="header__logo" href="index.html">
-        <svg class="icon__sedona">
+        <svg class="header__sedona-icon">
           <use xlink:href="#logo-sedona"></use>
         </svg>
       </a>
       <button class="header__button" type="button">
-        <svg class="icon__burger">
+        <svg class="header__burger-icon">
           <use xlink:href="#burger-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <!-- Для отоборажения меню необходимо добавить класс header-nav--vissible -->
-      <nav class="header-nav">
+      <nav class="header-nav header-nav--vissible">
         <ul class="header-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current">
             <a class="nav-list__link" href="index.html">Главная</a>
@@ -202,13 +202,13 @@
                 srcset="./img/photo-1-mobile@2x.jpg 2x" alt="Изображение дороги на фоне заката">
             </picture>
             <div class="media__description-container">
-              <div class="media__description-wrapper--horizon">
+              <div class="media__description-wrapper media__description-wrapper--horizon">
                 <p class="media__description">Нeродные просторы</p>
                 <p class="media__author">Автор фото: Борис</p>
               </div>
               <div class="media__counter-wrapper">
                 <button class="media__like-button" type="button">
-                  <svg class="icon__like">
+                  <svg class="media__like-icon">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="visually-hidden">Нравится</span>
@@ -232,7 +232,7 @@
               </div>
               <div class="media__counter-wrapper">
                 <button class="media__like-button" type="button">
-                  <svg class="icon__like">
+                  <svg class="media__like-icon">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="visually-hidden">Нравится</span>
@@ -256,7 +256,7 @@
               </div>
               <div class="media__counter-wrapper">
                 <button class="media__like-button" type="button">
-                  <svg class="icon__like">
+                  <svg class="media__like-icon">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="visually-hidden">Нравится</span>
@@ -280,7 +280,7 @@
               </div>
               <div class="media__counter-wrapper">
                 <button class="media__like-button" type="button">
-                  <svg class="icon__like">
+                  <svg class="media__like-icon">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="visually-hidden">Нравится</span>
@@ -313,7 +313,7 @@
         <ul class="footer-contacts__list">
           <li class="footer-contacts__item">
             <a class="footer-contacts__link" href="https://vk.com/htmlacademy">
-              <svg class="icon__social-1">
+              <svg class="footer-contacts__icon-1">
                 <use xlink:href="#vkontakte"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
@@ -321,7 +321,7 @@
           </li>
           <li>
             <a class="footer-contacts__link" href="https://t.me/htmlacademy">
-              <svg class="icon__social-2">
+              <svg class="footer-contacts__icon-2">
                 <use xlink:href="#telegram"></use>
               </svg>
               <span class="visually-hidden">Телеграм</span>
@@ -329,7 +329,7 @@
           </li>
           <li>
             <a class="footer-contacts__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="icon__social-3">
+              <svg class="footer-contacts__icon-3">
                 <use xlink:href="#youtube"></use>
               </svg>
               <span class="visually-hidden">Ютуб</span>
@@ -338,7 +338,7 @@
         </ul>
         <div class="footer-contacts__container footer-contacts__container--catalog">
           <a class="page__intro footer-contacts__container-link" href="https://up.htmlacademy.ru">
-            <svg class="icon__academy">
+            <svg class="footer-contacts__icon-academy">
               <use xlink:href="#htmlacademy"></use>
             </svg>
             Разработано

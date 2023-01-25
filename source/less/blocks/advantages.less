@@ -96,11 +96,11 @@
   box-sizing: border-box;
 }
 
-.advantages__icon--present {
+.advantages__features-item--present {
   padding: 16px 18px 43px;
 }
 
-.advantages__icon--house::before {
+.advantages__features-item--house::before {
   position: absolute;
   top: 24px;
   content: url("../img/vector/icon-house.svg");
@@ -109,7 +109,7 @@
   margin: auto;
 }
 
-.advantages__icon--food::before {
+.advantages__features-item--food::before {
   position: absolute;
   top: 22px;
   content: url("../img/vector/icon-food.svg");
@@ -118,7 +118,7 @@
   margin: auto;
 }
 
-.advantages__icon--present::before {
+.advantages__features-item--present::before {
   position: absolute;
   top: 17px;
   left: 22px;
@@ -157,6 +157,11 @@
 
 .advantages__title--description {
   margin: 0 0 11px 0;
+}
+
+.advantages__item--reverse,
+.advantages__wrapper {
+  background-color: #b5a082;
 }
 
 @media (min-width: @tablet-width) {
@@ -222,11 +227,11 @@
     box-sizing: border-box;
   }
 
-  .advantages__icon--house {
+  .advantages__features-item--house {
     padding: 158px 44px 20px;
   }
 
-  .advantages__icon--present {
+  .advantages__features-item--present {
     padding: 154px 37px 20px;
   }
 
@@ -257,7 +262,7 @@
     display: none;
   }
 
-  .advantages__icon--house::before {
+  .advantages__features-item--house::before {
     position: absolute;
     top: 59px;
     left: 89px;
@@ -266,7 +271,7 @@
     height: auto;
   }
 
-  .advantages__icon--food::before {
+  .advantages__features-item--food::before {
     position: absolute;
     top: 59px;
     left: 91px;
@@ -275,7 +280,7 @@
     height: auto;
   }
 
-  .advantages__icon--present::before {
+  .advantages__features-item--present::before {
     position: absolute;
     top: 62px;
     left: 98px;
@@ -290,6 +295,10 @@
 
   .advantages__description--number {
     margin-bottom: 23px;
+  }
+
+  .advantages__image {
+    width: 512px;
   }
 }
 
@@ -315,21 +324,21 @@
     width: 1200px;
   }
 
-  .advantages__icon--present {
+  .advantages__features-item--present {
     padding: 170px 102px 53px;
   }
 
-  .advantages__icon--house::before {
+  .advantages__features-item--house::before {
     top: 68px;
     left: 161px;
   }
 
-  .advantages__icon--food::before {
+  .advantages__features-item--food::before {
     top: 72px;
     left: 160px;
   }
 
-  .advantages__icon--present::before {
+  .advantages__features-item--present::before {
     position: absolute;
     top: 69px;
     left: 159px;
@@ -356,5 +365,9 @@
 
   .advantages__size--tourists {
     padding: 65px 68px 40px;
+  }
+
+  .advantages__image {
+    width: 800px;
   }
 }
