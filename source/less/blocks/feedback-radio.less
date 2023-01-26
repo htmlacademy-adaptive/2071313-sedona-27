@@ -47,6 +47,11 @@
 
 .feedback-radio__item {
   position: relative;
+  max-width: 220px;
+}
+
+.feedback-radio__item--box {
+  padding-left: 27px;
 }
 
 .feedback-radio__label {
@@ -55,9 +60,13 @@
 
 .feedback-radio__button,
 .feedback-radio__custom-checkbox {
-  position: relative;
+  // position: relative;
+  position: absolute;
   z-index: -1;
   opacity: 0;
+
+  left: -23px;
+  bottom: 6px;
 }
 
 .feedback-radio__button-custom {
@@ -135,10 +144,10 @@
   left: -31px;
 }
 
-.feedback-radio__button {
-  bottom: 0;
-  right: 23px;
-}
+// .feedback-radio__button {
+//   bottom: 0;
+//   right: 23px;
+// }
 
 .feedback-radio__custom-checkbox:checked + .feedback-radio__label--checkbox::before {
   background-color: #d5d5d5;
