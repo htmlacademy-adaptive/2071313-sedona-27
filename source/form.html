@@ -231,21 +231,21 @@
           <fieldset class="feedback-radio__fieldset">
             <legend class="page__slogan feedback-radio__legend">Ваше общее впечатление:</legend>
             <ul class="feedback-radio__list">
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--box">
                 <label class="page__slogan feedback-radio__label">
                   <input class="feedback-radio__button" type="radio" name="impression" value="yes" checked>
                   <span class="feedback-radio__button-custom"></span>
                   Скорее положительное
                 </label>
               </li>
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--box">
                 <label class="page__slogan feedback-radio__label">
                   <input class="feedback-radio__button" type="radio" name="impression" value="not">
                   <span class="feedback-radio__button-custom"></span>
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--box">
                 <label class="page__slogan feedback-radio__label">
                   <input class="feedback-radio__button" type="radio" name="impression" value="not">
                   <span class="feedback-radio__button-custom"></span>
@@ -258,25 +258,21 @@
             <legend class="page__slogan feedback-radio__legend feedback-radio__legend--checkbox">Посещенные
               достопримечательности:</legend>
             <ul class="feedback-radio__list feedback-radio__list-checkbox">
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--checkbox">
                 <input type="checkbox" class="feedback-radio__custom-checkbox" id="bridge" name="bridge" value="yes">
-                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="bridge">Мост
-                  Дьявола</label>
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="bridge">Мост Дьявола</label>
               </li>
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--checkbox">
                 <input type="checkbox" class="feedback-radio__custom-checkbox" id="bell" name="bell" value="yes">
-                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox"
-                  for="bell">Гора-Колокол</label>
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="bell">Гора-Колокол</label>
               </li>
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--checkbox">
                 <input type="checkbox" class="feedback-radio__custom-checkbox" id="park" name="park" value="yes">
-                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox"
-                  for="park">Слайд-парк</label>
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox feedback-radio__pseudo-park" for="park">Слайд-парк</label>
               </li>
-              <li class="feedback-radio__item">
+              <li class="feedback-radio__item feedback-radio__item--checkbox">
                 <input type="checkbox" class="feedback-radio__custom-checkbox" id="rocks" name="rocks" value="yes">
-                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox" for="rocks">Красные
-                  скалы</label>
+                <label class="page__slogan feedback-radio__label feedback-radio__label--checkbox feedback-radio__pseudo-rocks" for="rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -340,7 +336,7 @@
     <div class="modal__overlay"></div>
     <div class="modal__container modal__container--feedback">
       <h2 class="page__slogan modal__title">Ваш отзыв отправлен!</h2>
-      <p class="page__intro modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      <p class="page__intro modal__text modal__text--feedback">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
         опубликуем его на
         сайте.</p>
       <form class="modal__button-form" method="post">
@@ -353,7 +349,7 @@
   <div class="modal__overlay"></div>
     <div class="modal__container modal__container--error">
       <h2 class="page__slogan modal__title">Что-то пошло не так!</h2>
-      <p class="page__intro modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      <p class="page__intro modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
       <form method="post" action="#">
         <button class="site-button modal__button modal__button--error" type="button">Ok</button>

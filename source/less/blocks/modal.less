@@ -50,8 +50,12 @@
 }
 
 .modal__container--error {
-  padding: 36px 39px 37px 27px;
+  padding: 41px 20px 37px;
   min-height: 280px;
+}
+
+.modal__text--error {
+  width: 235px;
 }
 
 .modal__button--error {
@@ -65,10 +69,29 @@
   background-color: #f2f2f2;
 }
 
+.modal__container--feedback {
+  padding-top: 56px;
+  width: 320px;
+  min-height: 323px;
+}
+
+.modal__text--feedback {
+  margin: 15px auto;
+}
+
 @media (min-width: @tablet-width) {
   .modal__container--error {
+    padding: 36px 62px 37px;
     width: 400px;
     min-height: 347px;
+  }
+
+  .modal__text--error {
+    width: auto;
+  }
+
+  .modal__text--feedback {
+    padding: 15px 85px;
   }
 
   .modal__container--feedback {

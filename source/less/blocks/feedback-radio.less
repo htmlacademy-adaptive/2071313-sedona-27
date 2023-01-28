@@ -47,6 +47,11 @@
 
 .feedback-radio__item {
   position: relative;
+  max-width: 220px;
+}
+
+.feedback-radio__item--box {
+  padding-left: 27px;
 }
 
 .feedback-radio__label {
@@ -55,9 +60,11 @@
 
 .feedback-radio__button,
 .feedback-radio__custom-checkbox {
-  position: relative;
+  position: absolute;
   z-index: -1;
   opacity: 0;
+  left: -23px;
+  bottom: 6px;
 }
 
 .feedback-radio__button-custom {
@@ -111,33 +118,29 @@
 
 .feedback-radio__label--checkbox {
   cursor: pointer;
-  position: relative;
-  top: -16px;
-  left: -52px;
 }
 
 .feedback-radio__label--checkbox::before {
-  position: relative;
-  left: -16px;
-  top: 15px;
+  position: absolute;
+  right: 137px;
+  top: -11px;
   content: "";
   display: inline-block;
   width: 46px;
   height: 46px;
-  border: none;
+  border: 0;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
 
-.feedback-radio__custom-checkbox {
-  position: relative;
-  bottom: 16px;
-  left: -31px;
+.feedback-radio__item--checkbox {
+  max-width: 123px;
 }
 
-.feedback-radio__button {
-  bottom: 0;
-  right: 23px;
+.feedback-radio__custom-checkbox {
+  position: absolute;
+  bottom: 5px;
+  left: -49px;
 }
 
 .feedback-radio__custom-checkbox:checked + .feedback-radio__label--checkbox::before {
@@ -179,8 +182,8 @@
 }
 
 .feedback-radio__list-checkbox {
-  padding: 15px 0 0;
-  row-gap: 9px;
+  padding: 26px 44px 15px 9px;
+  row-gap: 36px;
 }
 
 .feedback-radio__legend--text {
@@ -248,11 +251,30 @@
   }
 
   .feedback-radio__list-checkbox {
-    padding: 0 53px 0 0;
-    column-gap: 74px;
+    padding: 11px 109px 16px 24px;
+    column-gap: 134px;
     display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 9px;
+    grid-template-columns: 123px 123px;
+    row-gap: 36px;
+  }
+
+  .feedback-radio__label--checkbox::before {
+    position: absolute;
+    right: 138px;
+    top: -11px;
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+
+  .feedback-radio__custom-checkbox {
+    position: absolute;
+    bottom: 5px;
+    left: -49px;
   }
 
   .feedback-radio__legend {
@@ -398,12 +420,11 @@
   }
 
   .feedback-radio__list-checkbox {
-    display: flex;
-    column-gap: 57px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 126px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
-    margin-left: 62px;
+    padding: 11px 11px 11px 38px;
   }
 
   .feedback-radio__legend--checkbox {
@@ -429,5 +450,27 @@
   .feedback-radio__textarea {
     width: 768px;
     min-height: 160px;
+  }
+
+  .feedback-radio__label--checkbox::before,
+  .feedback-radio__pseudo-rocks::before,
+  .feedback-radio__pseudo-park::before {
+    position: absolute;
+    right: 125px;
+    top: -11px;
+    content: "";
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+
+  .feedback-radio__pseudo-rocks::before {
+    right: 136px;
+  }
+
+  .feedback-radio__pseudo-park::before {
+    right: 106px;
   }
 }
